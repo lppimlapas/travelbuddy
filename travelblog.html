@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>Travel Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="styletravelblog.css" rel="stylesheet" type="text/css" />
+
+<body>
+
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-bar w3-white w3-card" id="myNavbar">
+			<a href="#home" class="w3-bar-item w3-button w3-wide"><img  src="image/logo.png" alt="me" width="90" height="25" ></a>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-map-pin"></i> HOME</a>
+      <a href="tourpackage.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> TOUR PACKAGE</a>
+      <a href="travelblog.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> TRAVEL BLOG</a>
+      
+      <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-extralarge w3-button w3-black" title="More" >GO TO WEBSITE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="signup.php" class="w3-bar-item w3-button">SIGN UP</a>
+        <a href="signin.php" class="w3-bar-item w3-button">SIGN IN</a>
+        <a href="adminsignin.php" class="w3-bar-item w3-button">ADMIN SIGN IN</a>
+      </div>
+      </div>
+      
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="tourpackage.php" onclick="w3_close()" class="w3-bar-item w3-button">TOUR PACKAGE</a>
+  <a href="travelblog.html" onclick="w3_close()" class="w3-bar-item w3-button">TRAVEL BLOG</a>
+  <a href="signup.php" onclick="w3_close()" class="w3-bar-item w3-button">SIGN UP</a>
+  <a href="signin.php" onclick="w3_close()" class="w3-bar-item w3-button">SIGN IN</a>
+  <a href="adminsignin.php" onclick="w3_close()" class="w3-bar-item w3-button">ADMIN SIGN IN</a>
+</nav>
+
+	<p class="w3-center">TRAVEL BLOG</p>
+	<h1 class="w3-center w3-large">“The biggest adventure you can ever take is to live the life of your dreams.”</h1>
+
+  <!--blog-->
+
+      <div class="container">
+        <h2>The 12 Prettiest Places in Switzerland</h2>
+        <p2>by world of wanderlust</p2>
+        <img src="/image/blog1.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+        <a href="https://worldofwanderlust.com/the-12-prettiest-places-in-switzerland/" target="_blank">Read More</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Five Epic European Road Trips</h2>
+        <p2>by Globetrotter girls</p2>
+        <img src="/image/blog2.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+        <a href="https://globetrottergirls.com/five-epic-european-road-trips/" target="_blank">Read More</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Winter Getaway: Christmas in Quebec City</h2>
+        <p2>by The Wanderlust effects</p2>
+        <img src="/image/blog3.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+        <a href="https://www.thewanderlusteffect.com/christmas-in-quebec-city/" target="_blank">Read More</a>
+        </div>
+      </div>
+      
+      <div class="container" >
+        <h2>Don’t Underestimate Turkey in Winter</h2>
+        <p2>by Young Adventuress</p2>
+        <img src="/image/blog4.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+        <a href="https://youngadventuress.com/2013/12/turkey-winter-destination.html" target="_blank">Read More</a>
+        </div>
+      </div>
+    <div class="container" >
+        <h2>24 Unique UK Adventure Weekends for 2021 (Hopefully!)</h2>
+        <p2>by Vicky flipflop travels</p2>
+        <img src="/image/blog5.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+        <a href="https://vickyflipfloptravels.com/uk-adventure-weekends/" target="_blank">Read More</a>
+        </div>
+      </div>
+    
+  
+ 
+      
+    
+
+
+  <!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#tour" onclick="w3_close()" class="w3-bar-item w3-button">TOUR package</a>
+  <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button">TRAVEL BLOG</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
